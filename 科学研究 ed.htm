@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人文艺术与数字媒体学院</title>
+    <style>
+        .highlight {
+            color: black !important; /* 鼠标悬浮时文字颜色变为黑色 */
+        }
+        /* 表格样式 */
+        table {
+            width: 100%; /* 表格宽度自适应 */
+            border-collapse: collapse; /* 边框合并 */
+        }
+        th, td {
+            border: 1px solid #ddd; /* 单元格边框 */
+            padding: 8px; /* 单元格内边距 */
+            text-align: center; /* 单元格内容居中 */
+        }
+        .button {
+            background-color: black; /* 按钮背景色 */
+            color: white; /* 按钮字体颜色 */
+            padding: 10px 20px; /* 按钮内边距 */
+            margin: 10px 0; /* 按钮外边距 */
+            display: inline-block; /* 按钮内联块级显示 */
+            font-size: 16px; /* 按钮字体大小 */
+            cursor: pointer; /* 鼠标悬停时显示手型图标 */
+        }
+        /* 将所有元素的文本默认设置为居中对齐 */
+        body, h1, h2, h3, h4, h, p {
+            text-align: center;
+        }
+        .bk1{background-color:#F56586;}
+        .H1{font-family:"华光行楷_CNKI"; font-size:48px; color:aliceblue;}
+        .H2{font-family:Arial, Helvetica, sans-serif; font-size:48px; color:aliceblue;}
+        .H3{font-family:"思源黑体"; font-size:24px; color:aliceblue;}
+        .H4{font-family:cursive; font-size: 24px; color:black;}
+        .h2{background-color: #EAB4C4;}
+        .p1{font-family: 'Courier New', Courier, monospace;font-size:large;color:black;}
+        .p3{font-family: 'Courier New', Courier, monospace;font-size: large;color:black;}
+        /* 新增的盒子模型样式 */
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink; /* 更改为粉色背景 */
+            padding: 20px;
+            color: black;
+            font-size: 16px; /* 假设统一字体大小为16px，可根据需要调整 */
+        }
+        .box div {
+            margin: 0 10px;
+            padding: 10px;
+            background-color: #EAB4C4; /* 子元素背景色保持不变 */
+            border: 1px solid #fff;
+            font-size: 16px; /* 子元素字体大小与.box保持一致 */
+        }
+        .notice {
+            background-color: pink; /* 粉色背景 */
+            padding: 20px; /* 内边距 */
+            margin: 20px 0; /* 外边距 */
+        }
+        .news {
+            background-color: lightgreen; /* 浅绿色背景 */
+            padding: 20px; /* 内边距，与粉色背景保持一致 */
+            margin: 20px 0; /* 外边距，与粉色背景保持一致 */
+                    /* 常用链接盒子样式 */
+                    .links-box {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr; /* 创建两列 */
+                        grid-template-rows: 1fr 1fr; /* 创建两行 */
+                        gap: 10px; /* 网格项目之间的间隙 */
+                        background: linear-gradient(to right, black, gray); /* 黑色到灰色的双色背景 */
+                        padding: 20px;
+                        margin: 20px 0;
+                    }
+                    .links-box h1 {
+                        margin: 0;
+                        text-align: center;
+                        color: white; /* 标题颜色为白色 */
+                    }
+                    .links-box div {
+                        background-color: rgba(0, 0, 0, 0.5); /* 链接背景色为半透明黑色 */
+                        border: 1px solid white; /* 白色边框 */
+                        color: white; /* 链接文字颜色为白色 */
+                        padding: 10px;
+                        text-align: center;
+                        box-sizing: border-box;
+                    }
+            
+                    /* 特定位置的链接 */
+                    .top-left { grid-area: 1 / 1; }
+                    .bottom-left { grid-area: 2 / 1; }
+                    .top-right { grid-area: 1 / 2; }
+                    .bottom-right { grid-area: 2 / 2; }
+              body {
+                        min-height: 200vh; /* 设置最小高度为视口高度的两倍 */
+                        overflow-y: scroll; /* 允许垂直滚动 */
+                    }
+                    .power {
+                        background-color: brown; /* 棕色背景 */
+                        padding: 20px; /* 添加内边距 */
+                        border-radius: 8px; /* 添加边框圆角 */
+                        margin-bottom: 20px; /* 添加底部外边距 */
+                    }
+                    .power h2 {
+                        margin: 0; /* 移除标题的默认外边距 */
+                        color: white; /* 设置标题文字颜色为白色，以确保在棕色背景上可读 */
+                    }
+    </style>
+</head>
+<body>
+    <script>
+         // 等待DOM加载完成
+         document.addEventListener('DOMContentLoaded', function() {
+            // 获取“科学研究”文本元素
+            var scienceResearch = document.getElementById('scienceResearch');
+            
+            // 为“科学研究”添加鼠标进入和离开事件
+            scienceResearch.addEventListener('mouseover', function() {
+                this.classList.add('highlight');
+            });
+            scienceResearch.addEventListener('mouseout', function() {
+                this.classList.remove('highlight');
+            });
+        });
+    </script>
+    <div class="bk1">
+        <h1 class="H1">杭州电子科技大学人文艺术与数字媒体学院</h1>
+        <h2 class="H2">School of Humanities and Digital Media</h2>
+        <h3 class="H3">联系方式: 0571-86878505 &nbsp;86919147</h3>
+        <h3 class="H3">邮箱:xwcb@hdu.edu.cn</h3>
+        <h4 class="H4">
+            <span>首页</span> |
+            <span>本科生教育</span> |
+            <span id="scienceResearch">科学研究</span> |
+            <span>党建生活</span>
+        </h4>
+    </div>
+
+    <div class="p1">
+        <div class="notice">    
+            <h2 class="notice">学术成果</h2>
+            <!-- 5*6 表格 -->
+            <table>
+                <!-- 填充表格内容 -->
+                <tbody>
+                    <!-- 表格行 -->
+                    				
+                    <tr><td>奖励名称</td><td>成果名称</td><td>获奖日期</td><td>第一完成人</td><td>获奖等级</td>
+                    <tr><td>人文社科-社会力量奖	</td><td>“忘适”室内设计</td><td>2022-12-06</td><td>王明治</td><td>优秀奖</td>
+                    <tr><td>人文社科-其他奖励</td><td>balance 室内设计</td><td>2022-08-25</td><td>王明治</td><td>三等奖（铜奖）</td>
+                    <tr><td>人文社科/td><td>2艺术启蒙——特殊儿童美术指导志愿服务/td><td>2022-04-01</td><td>周燕</td><td>三等奖（铜奖）</td>
+                    <tr><td>科学技术-社会力量奖</td><td>基于二维码加密防伪、溯源及印刷的关键技术研究与应用</td><td>2021-11-12</td><td>陈梅</td><td>二等奖（银奖）</td>
+                    <!-- 重复上面的<tr>来创建5行 -->
+                    <!-- ... 其他行 -->
+                </tbody>
+            </table>
+            <!-- “更多”按钮 -->
+            <button class="button">
+                <a href="https://syxy.hdu.edu.cn/2023/0726/c2205a249473/page.htm">更多</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="p3">
+        <div class="news">
+            <h2>学术著作</h2>
+            <!-- 5*6 表格 -->
+            <table>
+                <!-- 填充表格内容 -->
+                <tbody>
+                    <!-- 表格行 -->
+                    <tr><td>著作名称</td><td>作者</td><td>出版社名称</td><td>出版日期</td><td>类别</td><td>出版号</td></tr>
+                    <tr><td>Adobe Animate CC中文版基础教程</td><td>杨根福</td><td>上海交通大学出版社</td><td>2017-12-01</td><td>教材</td><td>978-7-313-17861-9</td></tr>
+                    <tr><td>互联网时代媒介生态创新研究：内容、群体、舆论</td><td>王松、王洁</td><td>上海交通大学出版社</td><td>2017-09-15</td><td>专著</td><td>9787313180766</td></tr>
+                    <tr><td>媒介素养的测量及影响因素研究</td><td>李金城</td><td>上海交通大学出版社</td><td>2017-06-30</td><td>专著</td><td>978-7-313-17196-2/G</td></tr>
+                    <tr><td>信息交互：数字出版创意攻略</td><td>施妍</td><td>科学技术文献出版社</td><td>2017-06-01</td><td>专著</td><td>9787518926916</td></tr>
+                    <!-- 重复上面的<tr>来创建5行 -->
+                    <!-- ... 其他行 -->
+                </tbody>
+            </table>
+            <button class="button">
+                <a href="https://syxy.hdu.edu.cn/2023/0726/c2205a249474/page.htm">更多</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="p3">
+        <div class="power">
+            <h2>知识产权</h2>
+            <!-- 5*6 表格 -->
+            <table>
+                <!-- 填充表格内容 -->
+                <tbody>
+                    <!-- 表格行 -->
+                    					
+                    <tr><td>专利名称</td><td>专利类型</td><td>登记人</td><td>授权公告日</td><td>授权公告号</td></tr>
+                    <tr><td>一种具有遮光结构的路由器</td><td>发明专利</td><td>李金城</td><td>2022-09-13</td><td>CN 111917654 B</td></tr>
+                    <tr><td>一种改进的回焊炉炉温优化方法</td><td>发明专利</td><td>鄢腊梅</td><td>2022-11-29	</td><td>CN114083073B</td></tr>
+                    <tr><td>一种 3D打印多孔珊瑚及其制备方法</td><td>发明专利</td><td>黄爱宾</td><td>2023-03-17</td><td>CN 113831110 B</td></tr>
+                    <tr><td>一种基于半变异函数的地理空间点数据采样方法</td><td>发明专利</td><td>周志光</td><td>2022-09-13</td><td>CN113792105A</td></tr>
+                    <!-- 重复上面的<tr>来创建5行 -->
+                    <!-- ... 其他行 -->
+                </tbody>
+            </table>
+            <button class="button">
+                <a href="https://syxy.hdu.edu.cn/2023/0726/c2205a249469/page.htm">更多</a>
+            </button>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
